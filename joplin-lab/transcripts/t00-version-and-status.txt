@@ -1,0 +1,40 @@
+$ joplin version
+Joplin CLI Client
+
+Copyright © 2016-2026 Laurent Cozic
+joplin 3.7.1 (prod, linux)
+
+Device: linux, AMD EPYC 9D25 126-Core Processor
+Client ID: c91bb54efaf44efca92a8a4c9a5f99dc
+Sync Version: 3
+Profile Version: 53
+Keychain Supported: No
+Alternative instance ID: -
+Sync target: (None)
+Editor: Markdown
+
+$ joplin --profile profile-a status (fresh profile)
+# Attachments
+
+Not downloaded: 0
+Downloading: 0
+Downloaded and decrypted: 0
+Downloaded and encrypted: 0
+Created locally: 0
+Error: 0
+
+# Sync status (synced items / total items)
+
+Note: 0/0
+Folder: 0/0
+Resource: 0/0
+Tag: 0/0
+NoteTag: 0/0
+Revision: 0/0
+Total: 0/0
+
+Conflicted: 0
+To delete: 0
+
+# Notebooks
+

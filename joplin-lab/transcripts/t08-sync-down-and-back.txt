@@ -1,0 +1,44 @@
+$ joplin --profile profile-b config sync.target 2
+$ joplin --profile profile-b config sync.2.path <lab>/sync-plain
+$ joplin --profile profile-b sync (an empty profile pulls everything down)
+Synchronisation target:  (2)
+Starting synchronisation...
+Fetched items: 1/12.
+Downloading resources...
+Created local items: 12. Fetched items: 12/12. Completed: 29/10/2026 19:02 (2s)
+$ joplin --profile profile-b use "Household"
+$ joplin --profile profile-b ls
+Boiler notes
+Weekly shopping list
+$ joplin --profile profile-b cat "Weekly shopping list"
+Weekly shopping list
+
+Things to buy on Saturday:
+
+- oat milk
+- eggs
+- coffee beans
+- the good jam
+$ joplin --profile profile-b mknote "Note from the second machine"
+$ joplin --profile profile-b set "Note from the second machine" body "..."
+$ joplin --profile profile-b sync
+Synchronisation target:  (2)
+Starting synchronisation...
+Created remote items: 1.
+Downloading resources...
+Created remote items: 1. Fetched items: 1/1. Completed: 29/10/2026 19:02 (671ms)
+$ joplin --profile profile-a sync (and the new note travels back)
+Synchronisation target:  (2)
+Starting synchronisation...
+Fetched items: 1/1.
+Downloading resources...
+Created local items: 1. Fetched items: 1/1. Completed: 29/10/2026 19:02 (471ms)
+$ joplin --profile profile-a use "Household"
+$ joplin --profile profile-a ls
+Note from the second machine
+Boiler notes
+Weekly shopping list
+$ joplin --profile profile-a cat "Note from the second machine"
+Note from the second machine
+
+Written on profile B, an empty profile that had never seen the Household notebook an hour ago.

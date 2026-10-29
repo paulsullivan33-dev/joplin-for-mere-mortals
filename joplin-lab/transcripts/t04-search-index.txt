@@ -1,0 +1,7 @@
+Opened read-only: profile-a/database.sqlite
+Search tables present: ['notes_normalized', 'notes_fts', 'items_fts']
+notes: 4 | folders: ['Garden Club', 'Household'] | tags: ['errands', 'home', 'shopping'] | resources: [('seed-order.txt', 87)]
+notes_fts rows after a session of one-shot terminal commands: 0
+A MATCH query for 'jam' therefore finds: []
+The index is filled by a background service while a Joplin app is open;
+one-shot terminal commands create the tables but leave them empty (see t05).

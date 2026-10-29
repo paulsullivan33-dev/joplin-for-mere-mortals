@@ -1,0 +1,22 @@
+$ joplin use "Household"
+$ joplin ls (current notebook)
+Boiler notes
+Weekly shopping list
+$ joplin cat "Weekly shopping list"
+Weekly shopping list
+
+Things to buy on Saturday:
+
+- oat milk
+- eggs
+- coffee beans
+- the good jam
+$ joplin cat "Boiler notes"
+Boiler notes
+
+Serviced in spring. Filter size is 16x25x1. If the red light flashes twice, turn the dial to OFF, wait a minute, and turn it back.
+$ joplin use "Garden Club"
+$ joplin cat "Spring planting plan"
+Spring planting plan
+
+Tomatoes go in after the last frost. The community plot rota is on the hall noticeboard. Bring spare twine.

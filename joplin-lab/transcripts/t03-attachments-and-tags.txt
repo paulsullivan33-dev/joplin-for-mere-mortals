@@ -1,0 +1,29 @@
+$ cat seed-order.txt (the file to attach)
+Seed order, spring:
+- tomato "Gardener's Delight" x6
+- runner beans x20
+- courgette x4
+$ joplin use "Garden Club"
+$ joplin attach "Spring planting plan" seed-order.txt
+$ joplin cat "Spring planting plan" (attachment link now in the body)
+Spring planting plan
+
+[seed-order.txt](resources/dc353d7e45a1407a96316cff78f3c3d6.txt)Tomatoes go in after the last frost. The community plot rota is on the hall noticeboard. Bring spare twine.
+$ ls profile-a/resources/ (the stored copy)
+total 8
+drwxr-x--- 1 root root  72 Oct 29 18:59 .
+drwxrwx--- 1 root root 104 Oct 29 18:59 ..
+-rw-rw---- 1 root root  87 Oct 29 18:59 dc353d7e45a1407a96316cff78f3c3d6.txt
+$ joplin use "Household"
+$ joplin tag add shopping "Weekly shopping list"
+$ joplin tag add home "Boiler notes"
+$ joplin tag add errands "Weekly shopping list"
+$ joplin tag list
+shopping
+home
+errands
+$ joplin tag list shopping (notes carrying the tag)
+	Weekly shopping list
+$ joplin tag notetags "Weekly shopping list"
+errands
+shopping

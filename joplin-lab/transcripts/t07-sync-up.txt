@@ -1,0 +1,46 @@
+$ joplin config sync.target 2        (2 = File system)
+$ joplin config sync.2.path <lab>/sync-plain
+$ joplin config sync.target
+sync.target = 2 (0: (None), 2: File system, 3: OneDrive, 5: Nextcloud, 6: WebDAV, 7: Dropbox, 8: S3, 9: Joplin Server, 10: Joplin Cloud, 11: Joplin Server (SAML))
+$ joplin config sync.2.path
+sync.2.path = /home/hatch/workspace/joplin-lab-work/sync-plain
+$ joplin sync
+Synchronisation target:  (2)
+Starting synchronisation...
+Created remote items: 1.
+Downloading resources...
+Created remote items: 12. Fetched items: 12/12. Completed: 29/10/2026 19:01 (3s)
+$ ls sync-plain/ and count the item files
+004a909db62c4df29a33dbca8acdf688.md
+010c4167691649a297fed5dbae2810e7.md
+3807d04faf704857b9159a1a8e663941.md
+770bf3ea32364432a507cb6c88d781e2.md
+a1ee7f9f5d654386aa8e74dcf0f50d9e.md
+a7df4f8f33af46c0ba9265d9265a8319.md
+b45a26e63e1b462b98b37c3b7b56a804.md
+d383faa76a0a4777a72a08aee5cfd51e.md
+d3b8fb489e094106a8228978e9557b8b.md
+dc353d7e45a1407a96316cff78f3c3d6.md
+dcd126a15129410b8dbc00727ba4d83b.md
+ea9f68da762f481cb0dc80c2acc3385d.md
+info.json
+locks
+temp
+12
+$ grep -rl "oat milk" sync-plain/ (plaintext sync target: the words are just there)
+/home/hatch/workspace/joplin-lab-work/sync-plain/d383faa76a0a4777a72a08aee5cfd51e.md
+$ head -14 of the shopping-list item file on the target
+Weekly shopping list
+
+Things to buy on Saturday:
+
+- oat milk
+- eggs
+- coffee beans
+- the good jam
+
+id: d383faa76a0a4777a72a08aee5cfd51e
+parent_id: dcd126a15129410b8dbc00727ba4d83b
+created_time: 2026-10-29T18:48:21.359Z
+updated_time: 2026-10-29T18:48:22.985Z
+is_conflict: 0

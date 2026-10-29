@@ -1,0 +1,8 @@
+[1G[0JEnter master password: [24G
+[driver: sent password]
+
+[1G[0JConfirm password: 
+[driver: sent confirmation]
+[19G
+
+[driver: child exited, raw status=0]

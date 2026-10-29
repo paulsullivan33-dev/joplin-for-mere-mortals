@@ -1,0 +1,15 @@
+$ joplin mkbook "Household"
+$ joplin mkbook "Garden Club"
+$ joplin use "Household"
+$ joplin mknote "Weekly shopping list"
+$ joplin set "Weekly shopping list" body "..."
+$ joplin mknote "Boiler notes"
+$ joplin set "Boiler notes" body "..."
+$ joplin use "Garden Club"
+$ joplin mknote "Spring planting plan"
+$ joplin set "Spring planting plan" body "..."
+$ joplin ls -r (all notebooks, recursive)
+Spring planting plan
+
+$ joplin cat "Weekly shopping list"
+Cannot find "Weekly shopping list".

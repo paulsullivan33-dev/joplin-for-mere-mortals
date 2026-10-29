@@ -1,0 +1,16 @@
+Context: profile-a2 holds one notebook "Private" and one note, "Example safe code",
+whose body contains the invented code word VELVET LEDGER 42. Three ways of enabling
+encryption were tried (the -p flag, the password piped on stdin, and a terminal
+driver answering both prompts - see t09a). The prompts were answered and the
+command exited cleanly, but in this sandbox the setting never persisted:
+
+$ joplin --profile profile-a2 e2ee status
+Encryption is: Disabled
+$ joplin --profile profile-a2 version (keychain line)
+Keychain Supported: No
+
+The profile was then synced to a filesystem target anyway, to show what an
+UNencrypted target looks like - this is the state E2EE exists to prevent:
+
+$ grep -r "VELVET" sync-e2ee/  (found, in plain text)
+/home/hatch/workspace/joplin-lab-work/sync-e2ee/4226427bedb2477fbba330d777d4f722.md:This is an invented example, not a r

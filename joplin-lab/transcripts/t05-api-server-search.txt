@@ -1,0 +1,8 @@
+$ curl http://127.0.0.1:41184/ping
+JoplinClipperServer
+$ curl ".../search?query=jam" (with the profile API token)
+{"items":[],"has_more":false}
+$ curl ".../search?query=frost"
+{"items":[],"has_more":false}
+$ curl ".../notes?fields=title" (all notes through the API)
+{"items":[{"title":"Weekly shopping list"},{"title":"Boiler notes"},{"title":"Spring planting plan"}],"has_more":false}
